@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercise-5"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-06-25 03:21:13 PM"/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNi0yNTswMzoxNzoxMyBQTTsyNzUz"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNi0yNTswMzoyMToxMyBQTTsxOzI4NTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="serviceFee" type="Integer" array="False" size=""/>
+            <declare name="pricePerPhoto" type="Real" array="False" size=""/>
+            <declare name="totalPhotos" type="Integer" array="False" size=""/>
+            <declare name="totalCost" type="Real" array="False" size=""/>
+            <assign variable="serviceFee" expression="2"/>
+            <assign variable="pricePerPhoto" expression="0.5"/>
+            <output expression="&quot;Enter number of photos:&quot;" newline="True"/>
+            <input variable="totalPhotos"/>
+            <assign variable="totalCost" expression="serviceFee + (totalPhotos * pricePerPhoto)"/>
+            <output expression="&quot;Cost (RM):&quot;" newline="True"/>
+            <output expression="totalCost" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

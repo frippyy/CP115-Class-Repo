@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercise-3"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-06-25 03:30:01 PM"/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNi0yNTswMjo1NToxMSBQTTsyNzUy"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNi0yNTswMzozMDowMSBQTTsyOzI4NTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="watt" type="Real" array="False" size=""/>
+            <declare name="hoursPerNight" type="Real" array="False" size=""/>
+            <declare name="chargeRate" type="Real" array="False" size=""/>
+            <declare name="costPerNight" type="Real" array="False" size=""/>
+            <declare name="costPerMonth" type="Real" array="False" size=""/>
+            <assign variable="chargeRate" expression="0.218"/>
+            <output expression="&quot;Enter watt per hour:&quot;" newline="True"/>
+            <input variable="watt"/>
+            <output expression="&quot;Enter hours per night:&quot;" newline="True"/>
+            <input variable="hoursPerNight"/>
+            <assign variable="costPerNight" expression="((watt / 1000) * hoursPerNight) * chargeRate"/>
+            <assign variable="costPerMonth" expression="costPerNight * 30"/>
+            <output expression="&quot;Cost per night (RM):&quot;" newline="True"/>
+            <output expression="costPerNight" newline="True"/>
+            <output expression="&quot;Cost per month (RM):&quot;" newline="True"/>
+            <output expression="costPerMonth" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

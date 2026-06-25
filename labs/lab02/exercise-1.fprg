@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="exercise-1"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-06-25 03:22:47 PM"/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNi0yNTswMjozMTowMSBQTTsyNzQ1"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNi0yNTswMzoyMjo0NyBQTTsyOzI4NjU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="commision" type="Real" array="False" size=""/>
+            <declare name="conversionRate" type="Real" array="False" size=""/>
+            <declare name="ringgit" type="Real" array="False" size=""/>
+            <declare name="thaiBaht" type="Real" array="False" size=""/>
+            <assign variable="commision" expression="0.02"/>
+            <assign variable="conversionRate" expression="8.08"/>
+            <output expression="&quot;Enter Ringgit Malaysia:&quot;" newline="True"/>
+            <input variable="ringgit"/>
+            <assign variable="ringgit" expression="ringgit - (ringgit * commision)"/>
+            <assign variable="thaiBaht" expression="ringgit * conversionRate"/>
+            <output expression="&quot;Converted Thai Baht:&quot;" newline="True"/>
+            <output expression="thaiBaht" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
