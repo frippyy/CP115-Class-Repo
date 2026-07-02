@@ -4,9 +4,9 @@
         <attribute name="name" value="lab-03-8"/>
         <attribute name="authors" value="User"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-07-02 03:19:10 PM"/>
+        <attribute name="saved" value="2026-07-02 03:28:17 PM"/>
         <attribute name="created" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0wMjswMzoxMToxMCBQTTsyNzQw"/>
-        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0wMjswMzoxOToxMCBQTTsxOzI4NTY="/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0wMjswMzoyODoxNyBQTTsyOzI4NjQ="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -20,7 +20,7 @@
             <input variable="principle"/>
             <input variable="rate"/>
             <input variable="time"/>
-            <assign variable="interest" expression="principle * rate * time"/>
+            <assign variable="interest" expression="(principle * rate * time) / 100"/>
             <assign variable="totalAmount" expression="interest + principle"/>
             <assign variable="monthlyInterest" expression="interest / (time * 12)"/>
             <output expression="interest" newline="True"/>
