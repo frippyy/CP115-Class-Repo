@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="lab-03-5"/>
+        <attribute name="authors" value="User"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-07-02 02:46:17 PM"/>
+        <attribute name="created" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0wMjswMjo0MDoyNCBQTTsyNzQ2"/>
+        <attribute name="edited" value="VXNlcjtERVNLVE9QLUozOVAxTlQ7MjAyNi0wNy0wMjswMjo0NjoxNyBQTTsxOzI4NjI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="packsEaten" type="Integer" array="False" size=""/>
+            <declare name="servingCalories" type="Integer" array="False" size=""/>
+            <declare name="totalCalories" type="Integer" array="False" size=""/>
+            <assign variable="servingCalories" expression="300"/>
+            <input variable="packsEaten"/>
+            <assign variable="totalCalories" expression="(packsEaten * 10) * servingCalories"/>
+            <output expression="totalCalories" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
