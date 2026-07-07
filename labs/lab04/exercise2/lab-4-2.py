@@ -1,10 +1,9 @@
 income = float(input())
 if income > 100000:
-    taxRate = 0.02
+    totalTax = ((income - 100000) * 0.02) + 500
 else:
     if income > 50000:
-        taxRate = 0.01
+        totalTax = (income - 50000) * 0.01
     else:
-        taxRate = 0
-totalTax = income * taxRate
+        totalTax = 0
 print(totalTax)
