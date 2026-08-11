@@ -17,8 +17,10 @@ quantity3 = 4
 
 tax_rate = 0.06
 
+# Calculate totals
 subtotal = (price1 * quantity1) + (price2 * quantity2) + (price3 * quantity3)
 tax = subtotal * tax_rate
 total = subtotal + tax
 
+# Print the receipt
 print(f"========== RECEIPT ==========\nItem\t\tPrice\tQty\tTotal\n{item1}\t\t${price1:.2f}\t{quantity1}\t${price1 * quantity1:.2f}\n{item2}\t\t${price2:.2f}\t{quantity2}\t${price2 * quantity2:.2f}\n{item3}\t\t${price3:.2f}\t{quantity3}\t${price3 * quantity3:.2f}\n------------------------------\nSubtotal\t\t\t${subtotal:.2f}\nTax (6%)\t\t\t${tax:.2f}\nTotal\t\t\t${total:.2f}\n============================")
