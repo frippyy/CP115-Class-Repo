@@ -10,3 +10,4 @@ final = subtotal + service_charge - 2
 print(subtotal)
 print(service_charge)
 print(final)
+
