@@ -7,4 +7,6 @@ else:
         power = (tempRoom - tempTarget) * 8
     else:
         power = 0
+if power > 100:
+    power = 100
 print(power)

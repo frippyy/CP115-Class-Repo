@@ -1,9 +1,9 @@
 distance = float(input())
-afterMidnight = (input().lower == 'true')
+afterMidnight = input()
 if distance > 2:
-    fare = 8 + (distance - 2) * 1.2
+    fare = 4 + (distance - 2) * 1.2
 else:
-    fare = distance * 4
-if afterMidnight == True:
+    fare = 4
+if afterMidnight == "yes":
     fare = fare + 3
 print(fare)
